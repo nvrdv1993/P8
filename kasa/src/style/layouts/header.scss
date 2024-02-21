@@ -30,10 +30,14 @@ nav {
         }
         & ul {
             font-size: 12px;
-            gap: 0;
+            gap: 20px;
             & li {
                 padding-left: 10px;
                 white-space: nowrap;
+            }
+            & a {
+                text-transform: uppercase;
+                font-weight: 600;
             }
         }
     }

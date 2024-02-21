@@ -3,8 +3,9 @@ import { Link } from "react-router-dom"
 import PropTypes from "prop-types"
 
 export default function Card({ location }) {
+    console.log("Card Location ID:", location.id);
     return (
-        <Link to={"/logement/" + location.id}
+        <Link to={"/Logement/" + location.id}
             >
             <article>
                 <img src={location.cover}

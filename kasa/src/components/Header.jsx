@@ -12,13 +12,13 @@ export default function Header() {
             <ul>
                 <li>
                     <Link to={"/Home"}
-                        className={location.pathname === "/" ? "active" : ""}>
+                        className={location.pathname === "/Home" ? "active" : ""}>
                         Accueil
                     </Link>
                 </li>
                 <li>
                     <Link to={"/About"}
-                        className={location.pathname === "/a-propos" ? "active" : ""}>
+                        className={location.pathname === "/About" ? "active" : ""}>
                         A Propos
                     </Link>
                 </li>

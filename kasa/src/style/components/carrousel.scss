@@ -1,0 +1,91 @@
+.carrousel {
+    position: relative;
+    width: 100%;
+    height: 415px; /* Hauteur spécifiée dans la maquette Figma */
+    overflow: hidden; /* Cela coupe les parties d'image qui dépassent du cadre */
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Centrer et découper l'image */
+      border-radius: 10px;
+    }
+  
+    button {
+      position: absolute;
+      top: 35%;
+      background: transparent; /* Fond transparent */
+      border: none;
+      color: white;
+      font-size: 100px;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 5px;
+      transform: scaleY(1.5); /* Ajustez la valeur selon vos besoins */
+    }
+  
+    button:first-child {
+      left: 10px;
+    }
+  
+    button:last-child {
+      right: 10px;
+    }
+  
+    button.right {
+      right: 0;
+      top: 35%;
+    }
+  
+    p {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+    }
+  
+    @media screen and (max-width: 800px) {
+        .descriptionLogement {
+            height: 255px;
+          
+            & .imageLogement {
+              height: 255px;
+            }
+          
+            & div {
+              top: -140px;
+          
+              & p {
+                bottom: -100px;
+              }
+          
+              & img {
+                width: 24px;
+                height: 24px;
+              }
+            }
+            }
+      
+        button {
+        top: 30%;
+      }
+  
+      button:first-child {
+        font-size: 40px;
+        top: 45%;
+      }
+  
+      button.right {
+        font-size: 40px;
+        right: 5px;
+        top: 44%;
+      }
+      p {
+        display: none; // Cacher la numérotation en mode responsive
+      }
+    }
+}
+    
+  
+  

@@ -6,8 +6,6 @@ import Banner from "../components/Banner";
 import Card from "../components/Card";
 import data from "../Data/data.json";
 
-
-
 export default function Home() {
     const location = useLocation();
 
